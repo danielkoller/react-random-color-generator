@@ -8,7 +8,7 @@ export default function RandomColorApp() {
     <div>
       <h1>Random Color Generator</h1>
       <p>
-        The hex code for the random color is: <b>{color}</b>
+        Generated Color: <b>{color}</b>
       </p>
       <div
         style={{
