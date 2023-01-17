@@ -7,9 +7,7 @@ export default function RandomColorApp() {
   return (
     <div>
       <h1>Random Color Generator</h1>
-      <p>
-        Generated Color: <b>{color}</b>
-      </p>
+      <p>Generated Color: {color}</p>
       <div
         style={{
           backgroundColor: color,
