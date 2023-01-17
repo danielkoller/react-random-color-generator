@@ -2,22 +2,21 @@ import randomcolor from 'randomcolor';
 import React, { useState } from 'react';
 
 export default function RandomColorApp() {
-  const [color, setColor] = useState(randomcolor());
+  const [backgroundColor, setBackgroundColor] = useState(randomcolor());
 
   return (
     <div>
       <h1>Random Color Generator</h1>
-      <div>Generated Color: {color}</div>
       <div
         style={{
-          backgroundColor: color,
-          width: '100px',
-          height: '100px',
-          marginBottom: '10px',
-          marginLeft: '10px',
+          backgroundColor: backgroundColor,
         }}
-      />
-      <button onClick={() => setColor(randomcolor())}>Generate</button>
+      >
+        Generated Color: {backgroundColor}
+      </div>
+      <button onClick={() => setBackgroundColor(randomcolor())}>
+        Generate
+      </button>
     </div>
   );
 }
